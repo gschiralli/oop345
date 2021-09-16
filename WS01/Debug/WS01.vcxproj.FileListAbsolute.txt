@@ -1,0 +1,2 @@
+C:\Users\gschi\OneDrive\Documents\OOP345\WS01\Debug\WS01.exe
+C:\Users\gschi\OneDrive\Documents\OOP345\WS01\Debug\WS01.pdb
