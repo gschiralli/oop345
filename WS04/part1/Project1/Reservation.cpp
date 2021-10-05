@@ -57,31 +57,31 @@ namespace sdds {
 		if (src.m_time >= 6 && src.m_time <= 9)
 		{
 			ostr << "Reservation " << std::setw(10) << std::right << src.m_id << ": ";
-			ostr << std::setw(20) << std::right << src.m_name;
-			ostr << " <" << std::setw(20) << std::left << src.m_email << "> ";
+			ostr << std::setw(20) << std::right << src.m_name << " ";
+			ostr << std::setw(20) << std::left <<" <" + src.m_email + ">";
 			ostr << "    Breakfast on day" << src.m_day << " @ " << src.m_time << ":00 for " << src.m_noOfPeople;
 			ostr << (src.m_noOfPeople > 1 ? " people " : " person ") << std::endl;
 		}
 		else if (src.m_time >= 11 && src.m_time <= 15)
 		{
 			ostr << "Reservation " << std::setw(10) << std::right << src.m_id << ": "; 
-			ostr << std::setw(20) << std::right << src.m_name;
-			ostr << " <" << std::setw(20) << std::left << src.m_email << "> ";
+			ostr << std::setw(20) << std::right << src.m_name << " ";
+			ostr << std::setw(20) << std::left << " <" + src.m_email + ">";
 			ostr << "    Lunch on day" << src.m_day << " @ " << src.m_time << ":00 for " << src.m_noOfPeople;
 			ostr << (src.m_noOfPeople > 1 ? " people " : " person ") << std::endl;
 		}
 		else if (src.m_time >= 17 && src.m_time <= 21)
 		{
 			ostr << "Reservation " << std::setw(10) << std::right << src.m_id << ": ";
-			ostr << std::setw(20) << std::right << src.m_name;
-			ostr << " <" << std::setw(20) << std::left << src.m_email << "> ";
+			ostr << std::setw(20) << std::right << src.m_name <<" ";
+			ostr << std::setw(20) << std::left << " <" + src.m_email + ">";
 			ostr << "    Dinner on day" << src.m_day << " @ " << src.m_time << ":00 for " << src.m_noOfPeople;
 			ostr << (src.m_noOfPeople > 1 ? " people " : " person ") << std::endl;
 		}
 		else {
 			ostr << "Reservation " << std::setw(10) << std::right << src.m_id << ": ";
-			ostr << std::setw(20) << std::right << src.m_name;
-			ostr << " <" << std::setw(20) << std::left << src.m_email << "> ";
+			ostr << std::setw(20) << std::right << src.m_name << " ";
+			ostr << std::setw(20) << std::left << " <" + src.m_email + ">";
 			ostr << "    Drinks on day" << src.m_day << " @ " << src.m_time << ":00 for " << src.m_noOfPeople;
 			ostr << (src.m_noOfPeople > 1 ? " people " : " person ") << std::endl;
 		}
