@@ -19,6 +19,8 @@ namespace sdds {
 		void update(int day, int time);
 		Reservation(const std::string& res);
 
+		friend std::ostream& operator <<(std::ostream& , const Reservation&);
+
 
 
 	};
