@@ -1,4 +1,4 @@
 ﻿  Book.cpp
   w5_p1.cpp
   Generating Code...
-  WS05.vcxproj -> C:\Users\gschi\Documents\Semester3\OOP345\WS05\Debug\WS05.exe
+C:\Users\gschi\Documents\Semester3\OOP345\WS05\Book.cpp : fatal error C1090: PDB API call failed, error code '3': C:\Users\gschi\Documents\Semester3\OOP345\WS05\Debug\vc142.pdb
