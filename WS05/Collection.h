@@ -1,3 +1,8 @@
+//Name: Gianni Schiralli
+//ID: 161166194
+//Email: gschiralli@myseneca.ca
+//Date: 2021-11-05
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 #ifndef SDDS_COLLECTION_H
 #define SDDS_COLLECTION_H
 #include <string>
@@ -12,6 +17,10 @@ namespace sdds {
 	public:
 		Collection(const std::string& name) :m_name{ name }, m_items{}, m_size{}, p_func{} {}
 		Collection(const Collection&) = delete;
+		~Collection() {
+		
+			delete[] m_items;
+		}
 		Collection& operator=(const Collection&) = delete;
 		const std::string& name() const {
 			return m_name; 

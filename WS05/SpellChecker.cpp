@@ -1,5 +1,11 @@
+//Name: Gianni Schiralli
+//ID: 161166194
+//Email: gschiralli@myseneca.ca
+//Date: 2021-11-05
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 #include <fstream>
 #include <iomanip>
+#include <iostream>
 #include "SpellChecker.h"
 namespace sdds {
 
@@ -11,23 +17,25 @@ namespace sdds {
 			throw "Bad file name!";
 		}
 		
-		size_t cnt = 0u;
-		do {
-			std::getline(file, m_badWords[cnt], ' ');
-			std::getline(file, m_goodWords[cnt], '\n');
-			m_badWords[cnt].erase(0, m_badWords[cnt].find_first_not_of(' '));
-			m_badWords[cnt].erase(m_badWords[cnt].find_last_not_of(' ') + 1);
-			m_goodWords[cnt].erase(0, m_goodWords[cnt].find_first_not_of(' '));
-			m_goodWords[cnt].erase(m_goodWords[cnt].find_last_not_of(' ') + 1);
-			++cnt;
+		for(auto i = 0;i < SIZE && file; ++i)
+		{
+			std::getline(file, m_badWords[i], ' ');
+			std::getline(file, m_goodWords[i], '\n');
+			m_badWords[i].erase(0, m_badWords[i].find_first_not_of(' '));
+			m_badWords[i].erase(m_badWords[i].find_last_not_of(' ') + 1);
+			m_goodWords[i].erase(0, m_goodWords[i].find_first_not_of(' '));
+			m_goodWords[i].erase(m_goodWords[i].find_last_not_of(' ') + 1);
+			
+		}
 
-		} while (file);
 		file.close();
 
 	}
 
 	void SpellChecker::operator()(std::string& text)
 	{
+
+		std::cout << "Spellchecker Statistics" << std::endl;
 		for (auto i = 0; i < SIZE; ++i)
 		{
 			while (text.find(m_badWords[i]) != std::string::npos)

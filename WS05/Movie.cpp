@@ -1,3 +1,8 @@
+//Name: Gianni Schiralli
+//ID: 161166194
+//Email: gschiralli@myseneca.ca
+//Date: 2021-11-05
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 #include <iomanip>
 #include "Movie.h"
 namespace sdds {

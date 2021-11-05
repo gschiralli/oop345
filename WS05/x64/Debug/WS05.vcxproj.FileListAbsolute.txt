@@ -1,1 +1,3 @@
 C:\Users\gschi\Documents\Semester3\OOP345\WS05\x64\Debug\WS05.exe
+C:\Users\gschi\OneDrive\Documents\oop345\WS05\x64\Debug\WS05.exe
+C:\Users\gschi\OneDrive\Documents\oop345\WS05\x64\Debug\WS05.pdb
