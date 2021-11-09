@@ -60,8 +60,8 @@ namespace sdds {
 	{
 	
 			os << "[" <<std::setfill('0')<< std::setw(3) << std::right << m_id << "] ";
-			os << "Item: " << std::setfill(' ') << std::setw(Station::m_widthField) << m_name;
-			os << " [" << std::setfill('0') << std::setw(6) << m_nextNum << "]";
+			os << "Item: " << std::setfill(' ') << std::left << std::setw(Station::m_widthField) << m_name;
+			os << " [" << std::setfill('0') << std::setw(6) << std::right << m_nextNum << "]";
 		
 		if(full) {
 			os << " Quantity: " << std::setfill(' ') << std::setw(Station::m_widthField) << std::left <<m_noStock;
