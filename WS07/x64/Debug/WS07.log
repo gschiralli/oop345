@@ -1,0 +1,14 @@
+﻿  SongCollection.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\numeric(35,1): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\gschi\Documents\Semester3\OOP345\WS07\SongCollection.cpp(75): message : see reference to function template instantiation '_Ty std::accumulate<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<sdds::Song>>>,int,sdds::SongCollection::display::<lambda_809e56bcab5667692b26fa48478fd68a>>(const _InIt,const _InIt,_Ty,_Fn)' being compiled
+          with
+          [
+              _Ty=int,
+              _InIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<sdds::Song>>>,
+              _Fn=sdds::SongCollection::display::<lambda_809e56bcab5667692b26fa48478fd68a>
+          ]
+  WS07.vcxproj -> C:\Users\gschi\Documents\Semester3\OOP345\WS07\x64\Debug\WS07.exe
