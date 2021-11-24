@@ -1,0 +1,10 @@
+﻿  Utilities.cpp
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(56,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(64,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(72,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  w8_p2.cpp
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(56,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(64,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gschi\OneDrive\Documents\oop345\WS08\Element.h(72,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  WS08.vcxproj -> C:\Users\gschi\OneDrive\Documents\oop345\WS08\x64\Debug\WS08.exe
