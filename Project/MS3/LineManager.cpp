@@ -12,7 +12,7 @@ namespace sdds {
 
     LineManager::LineManager(const std::string& file, const std::vector<Workstation*>& stations) :m_firstStation{ nullptr }, m_cntCustomerOrder{}
     {
-        try {
+        
             std::ifstream fin(file);
 
             std::string line;
@@ -31,12 +31,16 @@ namespace sdds {
                 bool more{};
                 std::string curr, next;
 
-                curr = util.extractToken(line, next_pos, more);
+                try {
+                    curr = util.extractToken(line, next_pos, more);
 
-                if (more)
-                    next = util.extractToken(line, next_pos, more);
-
-
+                    if (more)
+                        next = util.extractToken(line, next_pos, more);
+                }
+                catch (std::exception& e)
+                {
+                    std::cout << e.what();
+                }
                 std::for_each(stations.begin(), stations.end(), [&](Workstation* w) {
                     if (w->getItemName() == curr)
                     {
@@ -51,11 +55,8 @@ namespace sdds {
             }
             m_firstStation = activeLine.front();
             m_cntCustomerOrder = pending.size();
-        }
-        catch (std::exception& e)
-        {
-        std::cout << e.what();
-        }
+        
+        
     }
 
 
